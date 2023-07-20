@@ -1,0 +1,17 @@
+{% extends 'global/base.html' %}
+
+{% block content %}
+   <div class="single-cabe">
+       <p class="primary"><b>ID: </b>{{cable.id }}</p>
+       <p><b>DEVICE A :</b>{{cable.deviceA }}</p>
+       <p class="secundary"><b>PONTA A :</b>{{cable.pontaA }}</p>
+       <p><b>DEVICE B :</b>{{cable.deviceB }}</p>
+       <p class="secundary"><b>PONTA B: </b>{{cable.pontaB}}</p>
+       <p><b>ENDEREÇO: </b>{{ cable.device.endereco }}</p>
+       <p class="secundary"><b>LOCAL: </b>{{ cable.device.local}}</p>
+       <p><b>DESCRIÇÃO: </b>{{ cable.description }}</p>
+   </div>  
+{% endblock content %}
+
+    
+
